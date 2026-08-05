@@ -1,4 +1,4 @@
-# VirtualRegionFramework
+# VirtualRegion
 
 [中文](#中文) · [English](#english)
 
@@ -6,7 +6,7 @@
 
 ### 模块介绍
 
-VirtualRegionFramework 是一个面向用户自有设备及明确授权测试应用的 Android 8–16
+VirtualRegion 是一个面向用户自有设备及明确授权测试应用的 Android 8–16
 LSPosed 环境虚拟化模块。模块通过统一的环境配置和按应用隔离策略，为兼容性测试、隐私测试、
 自动化测试以及多地区业务验证提供可控、可恢复的测试环境。
 
@@ -72,7 +72,7 @@ LSPosed 环境虚拟化模块。模块通过统一的环境配置和按应用隔
 
 ### About
 
-VirtualRegionFramework is an LSPosed environment-virtualization module for Android 8–16. It is
+VirtualRegion is an LSPosed environment-virtualization module for Android 8–16. It is
 intended for user-owned devices and explicitly authorized test applications. Unified environment
 profiles and per-application isolation policies provide controlled and reversible conditions for
 compatibility, privacy, automation, and multi-region testing.
