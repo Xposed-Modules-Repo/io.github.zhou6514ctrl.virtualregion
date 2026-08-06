@@ -20,6 +20,8 @@ LSPosed 环境虚拟化模块。模块通过统一的环境配置和按应用隔
 加入 Telegram 群聊，获取模块更新、使用交流与问题反馈：
 [https://t.me/VirtualRegion](https://t.me/VirtualRegion)
 
+![您的支持可以让模块变得更好哦！](a.png)
+
 ### 已实现功能
 
 - 创建、编辑、切换和保存虚拟环境配置，并保留环境历史记录。
