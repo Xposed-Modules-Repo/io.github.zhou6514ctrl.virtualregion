@@ -11,9 +11,13 @@ LSPosed 环境虚拟化模块。模块通过统一的环境配置和按应用隔
 自动化测试以及多地区业务验证提供可控、可恢复的测试环境。
 
 模块采用 Modern Xposed API 102，最低支持 Android 8（API 26），目标支持 Android 16
-（API 36）。界面目前以中文为主。
+（API 36）。管理器支持简体中文和英文，并会跟随系统语言显示。
 
 模块包名：`io.github.zhou6514ctrl.virtualregion`
+
+当前版本：[0.1.2](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/3-0.1.2)
+
+> **升级提示：** 0.1.2 已切换授权服务器域名。旧版本无法继续完成授权，请及时更新。
 
 ### Telegram 群聊
 
@@ -30,7 +34,12 @@ LSPosed 环境虚拟化模块。模块通过统一的环境配置和按应用隔
 - 蜂窝网络与基站环境配置，覆盖常用移动网络、运营商和小区信息字段。
 - SIM 环境配置，包括多卡槽、订阅和常用运营商标识字段。
 - 蓝牙环境配置，包括经典蓝牙、BLE 扫描和 GATT 相关测试数据。
-- LSPosed 远程配置同步、进程内原子快照缓存，以及配置变化后的实时刷新机制。
+- 中英文管理界面，卡片、按钮和授权弹框会针对不同语言及大字体自动调整布局。
+- 卡密授权与设备绑定；未授权时显示不可取消的授权弹框，并提供 Telegram 免费获取卡密入口。
+- system_server 在接收每次虚拟环境快照前重新联网校验授权；校验失败时拒绝快照，并通知当前
+  管理器页面显示授权弹框。
+- LSPosed 远程配置同步、大快照文件传输、完整性校验、进程内原子缓存，以及配置变化后的实时
+  刷新机制。
 - 应用作用域管理、按应用启用或停用策略，以及可选的定位 SDK 兼容兜底。
 - 系统服务状态和脱敏日志查看/导出界面。
 - 针对 Android 8–16 差异的集中版本适配结构与安全失败策略。
@@ -39,6 +48,7 @@ LSPosed 环境虚拟化模块。模块通过统一的环境配置和按应用隔
 
 - 部分系统级 Hook 在不同厂商 ROM 上可能存在兼容性差异。
 - Android 8–16 全版本、无需重启热切换、多应用隔离及长期系统稳定性仍需要更多真实设备验证。
+- 授权和新快照下发需要连接 `https://api.lin-vr.top`；网络、证书或系统时间异常时会安全拒绝。
 - APK 能成功安装或构建不代表所有能力都已在每一台设备上验证。
 - 建议先在备用设备或可恢复的测试环境中验证，并保留原始配置和数据备份。
 
@@ -60,11 +70,12 @@ LSPosed 环境虚拟化模块。模块通过统一的环境配置和按应用隔
 
 ### 基本使用
 
-1. 安装 APK，并在 LSPosed Manager 中启用模块。
-2. 按实际 ROM 和测试目标选择推荐的系统服务作用域；仅在需要应用侧 SDK 兼容兜底时勾选目标应用。
-3. 在模块内创建环境，并在应用管理中明确为测试应用启用对应策略。
-4. 重启相关应用或进程；首次使用及版本升级后建议按设备情况重启系统。
-5. 通过状态页和脱敏日志确认生效范围，测试完成后停用策略或停用模块。
+1. 安装 0.1.2 APK，并在 LSPosed Manager 中启用模块。
+2. 打开管理器完成卡密授权；可通过弹框中的 Telegram 入口免费获取卡密。
+3. 按实际 ROM 和测试目标选择推荐的系统服务作用域；仅在需要应用侧 SDK 兼容兜底时勾选目标应用。
+4. 在模块内创建环境，并在应用管理中明确为测试应用启用对应策略。
+5. 重启相关应用或进程；首次使用及版本升级后建议按设备情况重启系统。
+6. 通过状态页和脱敏日志确认生效范围，测试完成后停用策略或停用模块。
 
 ---
 
@@ -78,9 +89,15 @@ profiles and per-application isolation policies provide controlled and reversibl
 compatibility, privacy, automation, and multi-region testing.
 
 The module uses Modern Xposed API 102, supports Android 8 (API 26) as its minimum version, and
-targets Android 16 (API 36). The application UI is currently primarily in Chinese.
+targets Android 16 (API 36). The manager supports Simplified Chinese and English and follows the
+system language.
 
 Module package: `io.github.zhou6514ctrl.virtualregion`
+
+Current version: [0.1.2](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/3-0.1.2)
+
+> **Upgrade notice:** Version 0.1.2 uses a new authorization server domain. Older versions can no
+> longer complete authorization and should be updated promptly.
 
 ### Telegram community
 
@@ -99,8 +116,15 @@ Join the Telegram community for module updates, usage discussions, and issue fee
 - Configure common cellular network, carrier, and cell/base-station fields.
 - Configure multi-SIM slots, subscriptions, and common carrier identity fields.
 - Configure classic Bluetooth, BLE scan, and GATT-related test data.
-- Synchronize configuration through LSPosed remote storage, maintain atomic in-process snapshots,
-  and refresh policies when configuration changes.
+- Use a bilingual Chinese/English manager whose cards, buttons, and authorization dialog adapt to
+  localized text and larger font sizes.
+- Bind licenses to devices. Unauthorized users see a non-cancelable authorization dialog with a
+  Telegram link for obtaining a free license key.
+- Revalidate authorization online in system_server before accepting every virtual-environment
+  snapshot. A failed check rejects the snapshot and opens the authorization dialog on the current
+  manager screen.
+- Synchronize configuration through LSPosed remote storage, transport large snapshots through
+  integrity-checked files, maintain atomic in-process caches, and refresh policies after changes.
 - Manage application scope, enable or disable per-app policies, and optionally enable a
   location-SDK compatibility fallback.
 - Inspect system-service status and view or export redacted logs.
@@ -111,6 +135,8 @@ Join the Telegram community for module updates, usage discussions, and issue fee
 - System-level hooks can behave differently across vendor ROMs.
 - Full Android 8–16 coverage, restart-free switching, multi-app isolation, and long-term system
   stability still require broader verification on physical devices.
+- Authorization and new snapshot publication require access to `https://api.lin-vr.top`. Network,
+  certificate, or system-time errors fail closed.
 - A successful build or installation does not mean every feature has been verified on every device.
 - Test on a spare or recoverable device first, and keep backups of original data and settings.
 
@@ -137,11 +163,13 @@ authorized, and non-harmful, and remain responsible for consequences caused by m
 
 ### Basic usage
 
-1. Install the APK and enable the module in LSPosed Manager.
-2. Select the required system-service scopes for the device ROM and test target. Select a target
+1. Install the 0.1.2 APK and enable the module in LSPosed Manager.
+2. Open the manager and complete license authorization. A free license key can be obtained through
+   the Telegram link in the dialog.
+3. Select the required system-service scopes for the device ROM and test target. Select a target
    app only when its SDK compatibility fallback is needed.
-3. Create an environment profile and explicitly enable its policy for each authorized test app.
-4. Restart the affected app or process. A system reboot is recommended after first installation or
+4. Create an environment profile and explicitly enable its policy for each authorized test app.
+5. Restart the affected app or process. A system reboot is recommended after first installation or
    an upgrade when required by the device.
-5. Confirm the active scope through the status page and redacted logs. Disable the policy or module
+6. Confirm the active scope through the status page and redacted logs. Disable the policy or module
    after testing.
