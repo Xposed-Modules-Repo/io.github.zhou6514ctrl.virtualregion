@@ -48,7 +48,6 @@ LSPosed 环境虚拟化模块。模块通过统一的环境配置和按应用隔
 
 - 部分系统级 Hook 在不同厂商 ROM 上可能存在兼容性差异。
 - Android 8–16 全版本、无需重启热切换、多应用隔离及长期系统稳定性仍需要更多真实设备验证。
-- 授权和新快照下发需要连接 `https://api.lin-vr.top`；网络、证书或系统时间异常时会安全拒绝。
 - APK 能成功安装或构建不代表所有能力都已在每一台设备上验证。
 - 建议先在备用设备或可恢复的测试环境中验证，并保留原始配置和数据备份。
 
@@ -135,8 +134,6 @@ Join the Telegram community for module updates, usage discussions, and issue fee
 - System-level hooks can behave differently across vendor ROMs.
 - Full Android 8–16 coverage, restart-free switching, multi-app isolation, and long-term system
   stability still require broader verification on physical devices.
-- Authorization and new snapshot publication require access to `https://api.lin-vr.top`. Network,
-  certificate, or system-time errors fail closed.
 - A successful build or installation does not mean every feature has been verified on every device.
 - Test on a spare or recoverable device first, and keep backups of original data and settings.
 
