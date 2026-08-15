@@ -1,5 +1,9 @@
 # VirtualRegion
 
+[中文](#中文) | [English](#english)
+
+## 中文
+
 VirtualRegion 可以为手机里的不同应用设置独立的虚拟环境，适合在自己的设备上进行应用测试。
 
 当前版本：[0.1.5](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/6-0.1.5)
@@ -36,3 +40,44 @@ Telegram：[https://t.me/VirtualRegion](https://t.me/VirtualRegion)
 ## 使用提醒
 
 请只在自己拥有的设备或已经得到明确许可的测试设备上使用。不要用于欺骗、盗取信息、干扰他人或其他违法用途。
+
+---
+
+## English
+
+VirtualRegion lets you set a separate virtual environment for different apps on your phone. It is intended for app testing on devices you own or are authorized to use.
+
+Current version: [0.1.5](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/6-0.1.5)
+
+## Main Features
+
+- Choose a location on the map, search for a place, or enter coordinates.
+- Give different apps different locations without affecting each other.
+- Set the Wi-Fi connection and nearby Wi-Fi networks visible to an app.
+- Set SIM card, carrier, signal, and cell tower information visible to an app.
+- Set classic Bluetooth and Bluetooth Low Energy devices visible to an app.
+- Create multiple environments and switch between them easily.
+- Export all environments as a backup and import them again later.
+- Read environment information from the current phone to reduce manual input.
+- Choose which features are enabled for each app.
+- View status and activity records to check whether your settings are active.
+- Use the app in Chinese or English.
+
+## Quick Start
+
+1. Download and install the latest APK.
+2. Enable VirtualRegion in LSPosed, then restart your phone.
+3. Open VirtualRegion and follow the authorization prompt.
+4. Create an environment and enter the information you need.
+5. Select the target app and environment in app management.
+6. Save the settings and reopen the target app.
+
+Restarting the phone once is recommended after the first installation or an update. Results may vary between phone brands and system versions, so test on a spare device first.
+
+## Updates and Help
+
+Telegram: [https://t.me/VirtualRegion](https://t.me/VirtualRegion)
+
+## Usage Notice
+
+Use VirtualRegion only on devices you own or test devices for which you have clear permission. Do not use it for deception, data theft, disruption, or any illegal activity.
