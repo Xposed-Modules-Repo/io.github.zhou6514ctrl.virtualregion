@@ -40,9 +40,9 @@ Telegram：[https://t.me/VirtualRegion](https://t.me/VirtualRegion)
 ## 使用提醒
 
 请只在自己拥有的设备或已经得到明确许可的测试设备上使用。不要用于欺骗、盗取信息、干扰他人或其他违法用途。
-
----
 ##本模块不允许在中国使用，故而添加了Telegram群授权验证
+---
+
 ## English
 
 VirtualRegion lets you set a separate virtual environment for different apps on your phone. It is intended for app testing on devices you own or are authorized to use.
