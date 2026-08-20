@@ -6,7 +6,7 @@
 
 VirtualRegion 可以为手机里的不同应用设置独立的虚拟环境，适合在自己的设备上进行应用测试。
 
-当前版本：[0.2.2](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/13-0.2.2)
+当前版本：[0.2.3](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/14-0.2.3)
 
 ## 主要功能
 
@@ -21,6 +21,8 @@ VirtualRegion 可以为手机里的不同应用设置独立的虚拟环境，适
 - 单独控制每个应用需要启用的功能。
 - 查看当前状态和运行记录，方便判断是否已经生效。
 - 支持中文和英文界面。
+- 蓝牙环境记录更完整，虚拟蓝牙设备列表显示更齐全。
+- 虚拟蓝牙会持续返回设备，扫描停止后不会继续返回旧结果。
 
 ## 简单使用
 
@@ -48,7 +50,7 @@ Telegram：[https://t.me/VirtualRegion](https://t.me/VirtualRegion)
 
 VirtualRegion lets you set a separate virtual environment for different apps on your phone. It is intended for app testing on devices you own or are authorized to use.
 
-Current version: [0.2.2](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/13-0.2.2)
+Current version: [0.2.3](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/14-0.2.3)
 
 ## Main Features
 
@@ -63,6 +65,8 @@ Current version: [0.2.2](https://github.com/Xposed-Modules-Repo/io.github.zhou65
 - Choose which features are enabled for each app.
 - View status and activity records to check whether your settings are active.
 - Use the app in Chinese or English.
+- Keep more complete Bluetooth environment data and show the full virtual device list.
+- Keep returning Bluetooth devices during a scan and stop old results after scanning ends.
 
 ## Quick Start
 
