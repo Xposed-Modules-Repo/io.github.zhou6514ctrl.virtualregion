@@ -6,7 +6,7 @@
 
 VirtualRegion 可以为手机里的不同应用设置独立的虚拟环境，适合在自己的设备上进行应用测试。
 
-当前版本：[0.2.1](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/12-0.2.1)
+当前版本：[0.2.2](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/13-0.2.2)
 
 ## 主要功能
 
@@ -48,7 +48,7 @@ Telegram：[https://t.me/VirtualRegion](https://t.me/VirtualRegion)
 
 VirtualRegion lets you set a separate virtual environment for different apps on your phone. It is intended for app testing on devices you own or are authorized to use.
 
-Current version: [0.2.1](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/12-0.2.1)
+Current version: [0.2.2](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/13-0.2.2)
 
 ## Main Features
 
