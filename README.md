@@ -2,6 +2,13 @@
 
 [中文](#中文) | [English](#english)
 
+> [!WARNING]
+> **使用地区限制 / Regional Usage Restriction**
+>
+> **中文：本模块不允许在中国使用，因此采用 Telegram 群组授权验证。**
+>
+> **English: This module is not permitted for use in China. Authorization is therefore verified through the Telegram group.**
+
 ## 中文
 
 VirtualRegion 可以为手机里的不同应用设置独立的虚拟环境，适合在自己的设备上进行应用测试。
@@ -50,7 +57,6 @@ Telegram：[https://t.me/VirtualRegion](https://t.me/VirtualRegion)
 
 ---
 
-##本模块不允许在中国使用，故而添加了Telegram群授权验证
 ## English
 
 VirtualRegion lets you set a separate virtual environment for different apps on your phone. It is intended for app testing on devices you own or are authorized to use.
