@@ -13,7 +13,7 @@
 
 VirtualRegion 可以为手机里的不同应用设置独立的虚拟环境，适合在自己的设备上进行应用测试。
 
-当前版本：[0.2.4](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/15-0.2.4)
+当前版本：[0.2.7](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/18-0.2.7)
 
 ## 主要功能
 
@@ -35,6 +35,8 @@ VirtualRegion 可以为手机里的不同应用设置独立的虚拟环境，适
 - 路线录制使用当前地图服务商的联合定位，支持长时间增量保存和中断恢复。
 - 路线播放会同步模拟 GPS、Wi-Fi、基站与标准 GNSS 卫星状态。
 - 改善路线编辑、录制状态、弹窗界面和 Android 16 定位兼容性。
+- 修复授权问题。
+- 修复开启虚拟 Wi-Fi 后列表为空的问题。
 
 ## 简单使用
 
@@ -61,7 +63,7 @@ Telegram：[https://t.me/VirtualRegion](https://t.me/VirtualRegion)
 
 VirtualRegion lets you set a separate virtual environment for different apps on your phone. It is intended for app testing on devices you own or are authorized to use.
 
-Current version: [0.2.4](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/15-0.2.4)
+Current version: [0.2.7](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/18-0.2.7)
 
 ## Main Features
 
@@ -83,6 +85,8 @@ Current version: [0.2.4](https://github.com/Xposed-Modules-Repo/io.github.zhou65
 - Record routes with the selected map provider's fused location source, long-session journaling, and interrupted-session recovery.
 - Keep GPS, Wi-Fi, cell, and standard GNSS satellite status consistent during route playback.
 - Improved route editing, recording status, dialog styling, and Android 16 location compatibility.
+- Fixed authorization issues.
+- Fixed an issue where the Wi-Fi list was empty after virtual Wi-Fi was enabled.
 
 ## Quick Start
 
