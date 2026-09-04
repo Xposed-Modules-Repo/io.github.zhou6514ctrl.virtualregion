@@ -13,7 +13,7 @@
 
 VirtualRegion 可以为手机里的不同应用设置独立的虚拟环境，适合在自己的设备上进行应用测试。
 
-当前版本：[0.2.7](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/18-0.2.7)
+当前版本：[1.0.3](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/104-1.0.3)
 
 ## 主要功能
 
@@ -37,6 +37,10 @@ VirtualRegion 可以为手机里的不同应用设置独立的虚拟环境，适
 - 改善路线编辑、录制状态、弹窗界面和 Android 16 定位兼容性。
 - 修复授权问题。
 - 修复开启虚拟 Wi-Fi 后列表为空的问题。
+- 新增环境广场，可浏览、分享并通过分享码导入环境配置。
+- 修复管理器长时间未打开后虚拟 SIM 可能失效的问题。
+- 网络请求失败时会直接说明原因，并提供更容易理解的处理建议。
+- 优化首页与环境配置流程，让常用操作和生效状态更容易确认。
 
 ## 简单使用
 
@@ -63,7 +67,7 @@ Telegram：[https://t.me/VirtualRegion](https://t.me/VirtualRegion)
 
 VirtualRegion lets you set a separate virtual environment for different apps on your phone. It is intended for app testing on devices you own or are authorized to use.
 
-Current version: [0.2.7](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/18-0.2.7)
+Current version: [1.0.3](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/104-1.0.3)
 
 ## Main Features
 
@@ -87,6 +91,10 @@ Current version: [0.2.7](https://github.com/Xposed-Modules-Repo/io.github.zhou65
 - Improved route editing, recording status, dialog styling, and Android 16 location compatibility.
 - Fixed authorization issues.
 - Fixed an issue where the Wi-Fi list was empty after virtual Wi-Fi was enabled.
+- Added Environment Plaza for browsing, sharing, and importing environment profiles with a share code.
+- Fixed an issue where virtual SIM settings could stop working after the manager had not been opened for a long time.
+- Network failures now explain the cause and provide clearer recovery guidance.
+- Improved the home and environment setup flows so common actions and activation status are easier to find.
 
 ## Quick Start
 
