@@ -4,7 +4,7 @@
 
 **Reproduce location, wireless, and camera test scenarios on one Android device.**
 
-[中文](#中文) · [English](#english) · [下载 / Download 2.1.7](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/217-2.1.7)
+[中文](#中文) · [English](#english) · [下载 / Download 2.1.8](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/218-2.1.8)
 
 > [!WARNING]
 > **使用地区限制 / Regional Usage Restriction**
@@ -17,7 +17,7 @@
 
 VirtualRegion 是面向 LSPosed 的 Android 环境模拟工具。测试多语言界面、复现网络条件、演示移动路线，或给相机应用一段可重复的输入，都可以使用保存好的配置。选好场景、应用给目标，再用同一套条件复测。
 
-[下载 VirtualRegion 2.1.7](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/217-2.1.7) · [查看版本历史](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases) · [Telegram 社区](https://t.me/VirtualRegion)
+[下载 VirtualRegion 2.1.8](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/218-2.1.8) · [查看版本历史](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases) · [Telegram 社区](https://t.me/VirtualRegion)
 
 ### 构建场景，保存后随时复用
 
@@ -42,6 +42,11 @@ VirtualRegion 是面向 LSPosed 的 Android 环境模拟工具。测试多语言
 - **四个悬浮窗**　让测试应用保持前台，直接切换环境、操作 GPS 摇杆、控制路线或切换多段视频和图片。悬浮窗可随时收起，路线控制与管理器保持同步。
 - **工作台与外观**　通过工作台、环境、应用、路线和更多入口定位常用功能，侧栏提供全部入口。配置编辑支持草稿恢复。支持浅色、深色及跟随系统，管理器可独立切换 18 种界面语言。
 - **同步与诊断**　在状态页查看系统服务和配置同步进度，同步遇到问题时可重试。日志可筛选、复制和导出，崩溃报告可单独查看。管理器内置更新检查和下载入口。
+
+### 2.1.8 更新
+
+- OpenCell 基站查询半径上限和默认值调整为 4000 米。
+- 修复地图和 OpenCell API 凭据失效后反复报错的问题。
 
 ### 2.1.7 更新
 
@@ -69,7 +74,7 @@ VirtualRegion 是面向 LSPosed 的 Android 环境模拟工具。测试多语言
 
 VirtualRegion is an Android environment simulation tool for LSPosed. Test localized interfaces, reproduce wireless conditions, demonstrate a route, or feed a repeatable clip to a camera app. Save the setup, apply it to your test targets, and reuse it on the next run.
 
-[Download VirtualRegion 2.1.7](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/217-2.1.7) · [Release history](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases) · [Telegram community](https://t.me/VirtualRegion)
+[Download VirtualRegion 2.1.8](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/218-2.1.8) · [Release history](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases) · [Telegram community](https://t.me/VirtualRegion)
 
 ### Build a scenario once and reuse it
 
@@ -94,6 +99,11 @@ VirtualRegion is an Android environment simulation tool for LSPosed. Test locali
 - **Four floating tools.** Switch environments, steer the GPS joystick, control route playback, or switch between saved videos and photos while the test app stays in front. Minimize each tool when finished. Route controls stay in sync with the Manager.
 - **Workspace and appearance.** Open the workspace, environments, apps, routes, and more from the main navigation, with the full feature list in the sidebar. Recover configuration drafts and choose light, dark, or system appearance. The Manager has 18 interface languages and its language can be set independently.
 - **Synchronization and diagnostics.** Check system service and configuration delivery status, retry synchronization, filter, copy, or export logs, and review crash reports. Built-in update checks provide release notes and a download link.
+
+### New in 2.1.8
+
+- Raised the OpenCell cell tower search radius limit and default to 4,000 meters.
+- Fixed repeated errors when map or OpenCell API credentials became invalid.
 
 ### New in 2.1.7
 
